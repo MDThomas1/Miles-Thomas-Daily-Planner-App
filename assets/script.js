@@ -1,2 +1,2 @@
 var timer = moment()
-$('#currentDay').text(timer.format("MMM Do, YYYY"))
+$('#currentDay').text(timer.format("[Today is ] dddd, MMM Do, YYYY"))

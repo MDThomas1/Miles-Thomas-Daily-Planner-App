@@ -17,90 +17,91 @@ tenAct.val(localStorage.getItem('10am Activity'));
 elevenAct.val(localStorage.getItem('11am Activity'));
 twelveAct.val(localStorage.getItem('12pm Activity'));
 oneAct.val(localStorage.getItem('1pm Activity'));
-threeAct.val(localStorage.getItem('2pm Activity'));
+twoAct.val(localStorage.getItem('2pm Activity'));
+threeAct.val(localStorage.getItem('3pm Activity'));
+fourAct.val(localStorage.getItem('4pm Activity'));
+fiveAct.val(localStorage.getItem('5pm Activity'));
 
 $('#currentDay').text(timer.format("[Today is ] dddd, MMM Do, YYYY"))
 
 function saveEvents9am() {
-    if (nineAct != null) { 
-        localStorage.setItem('9am Activity', nineAct);
+    var actionNine = nineAct.val()
+    if (actionNine != null) { 
+        localStorage.setItem('9am Activity', actionNine);
     } else {
-        localStorage.removeItem('9am Activity')
+        localStorage.removeItem('9am Activity');
     }
 };
 
 function saveEvents10am() {
-    var action = plans.innerHTML
-    if (action != null) { 
-        localStorage.setItem('10am Activity', action);
+    var actionTen = tenAct.val()
+    if (actionTen != null) { 
+        localStorage.setItem('10am Activity', actionTen);
     } else {
-        localStorage.removeItem('10am Activity')
+        localStorage.removeItem('10am Activity');
     }
 };
 
 function saveEvents11am() {
-    var action = plans.innerHTML
-    if (action != null) { 
-        localStorage.setItem('11am Activity', action);
+    var actionEleven = elevenAct.val()
+    if (actionEleven != null) { 
+        localStorage.setItem('11am Activity', actionEleven);
     } else {
-        localStorage.removeItem('11am Activity')
+        localStorage.removeItem('11am Activity');
     }
 };
 
 function saveEvents12pm() {
-    var action = plans.innerHTML
-    if (action != null) { 
-        localStorage.setItem('12pm Activity', action);
+    var actionTwelve = twelveAct.val()
+    if (actionTwelve != null) { 
+        localStorage.setItem('12pm Activity', actionTwelve);
     } else {
-        localStorage.removeItem('12pm Activity')
+        localStorage.removeItem('12pm Activity');
     }
 };
 
 function saveEvents1pm() {
-    var action = plans.innerHTML
-    if (action != null) { 
-        localStorage.setItem('1pm Activity', action);
+    var actionOne = oneAct.val()
+    if (actionOne != null) { 
+        localStorage.setItem('1pm Activity', actionOne);
     } else {
-        localStorage.removeItem('Activity')
+        localStorage.removeItem('Activity');
     }
 };
 
 function saveEvents2pm() {
-    var action = plans.innerHTML
-    if (action != null) { 
-        localStorage.setItem('2pm Activity', action);
+    var actionTwo = twoAct.val()
+    if (actionTwo != null) { 
+        localStorage.setItem('2pm Activity', actionTwo);
     } else {
-        localStorage.removeItem('2pm Activity')
+        localStorage.removeItem('2pm Activity');
     }
 };
 
 function saveEvents3pm() {
-    var action = plans.innerHTML
-    if (action != null) { 
-        localStorage.setItem('3pm Activity', action);
-        plans.val(localStorage.getItem('3pm Activity'));
+    var actionThree = threeAct.val()
+    if (actionThree != null) { 
+        localStorage.setItem('3pm Activity', actionThree);
     } else {
-        localStorage.removeItem('3pm Activity')
+        localStorage.removeItem('3pm Activity');
     }
 };
 
 function saveEvents4pm() {
-    var action = plans.innerHTML
-    if (action != null) { 
-        localStorage.setItem('4pm Activity', action);
-        plans.val(localStorage.getItem('4pm Activity'));
+    var actionFour = fourAct.val()
+    if (actionFour != null) { 
+        localStorage.setItem('4pm Activity', actionFour);
     } else {
-        localStorage.removeItem('4pm Activity')
+        localStorage.removeItem('4pm Activity');
     }
 };
 
 function saveEvents5pm() {
-    var action = plans.innerHTML
-    if (action != null) { 
-        localStorage.setItem('5pm Activity', action);
-        plans.val(localStorage.getItem('5pm Activity'));
+    var actionFive = fiveAct.val()
+    if (actionFive != null) { 
+        localStorage.setItem('5pm Activity', actionFive);
     } else {
-        localStorage.removeItem('5pm Activity')
+        localStorage.removeItem('5pm Activity');
     }
 };
 

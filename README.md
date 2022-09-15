@@ -4,7 +4,7 @@
 https://mdthomas1.github.io/Miles-Thomas-homework-task-5/ 
 
 ## Screenshot
-<img src=”./assets/webshot.png />
+<img src=”./assets/webshot.png" />
 
 ## Description
 An interactive daily planner with added display of the current date.

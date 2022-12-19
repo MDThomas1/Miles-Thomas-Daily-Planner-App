@@ -1,7 +1,9 @@
+//General javascript tags
 var timer = moment()
 var saveBtn = $('.saveBtn')
 var hourTag = $('.hour')
 
+//Variables for the scpecific text areas
 var nineAct = $('textarea[name="9amAct"]')
 var tenAct = $('textarea[name="10amAct"]')
 var elevenAct = $('textarea[name="11amAct"]')
@@ -12,6 +14,7 @@ var threeAct = $('textarea[name="3pmAct"]')
 var fourAct = $('textarea[name="4pmAct"]')
 var fiveAct = $('textarea[name="5pmAct"]')
 
+//Loading in saved data
 nineAct.val(localStorage.getItem('9am Activity'));
 tenAct.val(localStorage.getItem('10am Activity'));
 elevenAct.val(localStorage.getItem('11am Activity'));
@@ -22,8 +25,10 @@ threeAct.val(localStorage.getItem('3pm Activity'));
 fourAct.val(localStorage.getItem('4pm Activity'));
 fiveAct.val(localStorage.getItem('5pm Activity'));
 
+//Current date display
 $('#currentDay').text(timer.format("[Today is ] dddd, MMM Do, YYYY"))
 
+//Functions for saving new data
 function saveEvents9am() {
     var actionNine = nineAct.val()
     if (actionNine != null) { 
@@ -104,14 +109,3 @@ function saveEvents5pm() {
         localStorage.removeItem('5pm Activity');
     }
 };
-
-
-/*function ppf() {
-    if () {
-
-    } else if () {
-
-    } else if () {
-
-    }
-}*/

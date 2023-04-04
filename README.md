@@ -1,4 +1,4 @@
-# Miles-Thomas-homework-task-5
+# Miles-Thomas-Daily-Planner-App
 
 ## URL to Website
 https://mdthomas1.github.io/Miles-Thomas-homework-task-5/ 
